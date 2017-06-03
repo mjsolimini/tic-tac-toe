@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16C67" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="ObA-dk-sSI">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Messages View Controller-->
+        <scene sceneID="7MM-of-jgj">
+            <objects>
+                <viewController id="ObA-dk-sSI" customClass="MessagesViewController" customModule="Tic_Tac_Toe_iMessage" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="qkL-Od-lgU"/>
+                        <viewControllerLayoutGuide type="bottom" id="n38-gi-rB5"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="zMn-AG-sqS">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="528"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" image="Board" translatesAutoresizingMaskIntoConstraints="NO" id="uxI-f1-NHo">
+                                <rect key="frame" x="0.0" y="99" width="320" height="330"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="330" id="KbU-Fl-xZg"/>
+                                    <constraint firstAttribute="width" constant="320" id="yoI-sY-kIv"/>
+                                </constraints>
+                            </imageView>
+                            <button opaque="NO" tag="1" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="P9e-BP-nnW">
+                                <rect key="frame" x="10" y="109" width="100" height="100"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="100" id="5uF-k4-bab"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="100" id="SuJ-Pr-m6W"/>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="100" id="XSb-qF-10r"/>
+                                    <constraint firstAttribute="height" constant="100" id="ddE-Ls-i16"/>
+                                </constraints>
+                                <connections>
+                                    <action selector="action:" destination="ObA-dk-sSI" eventType="touchUpInside" id="VyF-r5-xyF"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="9" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XmU-dm-PVX">
+                                <rect key="frame" x="218" y="325" width="100" height="100"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="100" id="KWC-sg-baY"/>
+                                    <constraint firstAttribute="width" constant="100" id="LWp-jA-PDz"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="100" id="bB3-Z3-7pd"/>
+                                    <constraint firstAttribute="height" constant="100" id="p3Q-lX-Wl4"/>
+                                </constraints>
+                                <connections>
+                                    <action selector="action:" destination="ObA-dk-sSI" eventType="touchUpInside" id="VLd-d4-tNo"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="8" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ky3-Tl-GiA">
+                                <rect key="frame" x="110" y="325" width="100" height="100"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="100" id="7th-rg-edg"/>
+                                    <constraint firstAttribute="width" constant="100" id="QHZ-Cz-dUL"/>
+                                    <constraint firstAttribute="height" constant="100" id="epY-cA-SSp"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="100" id="pHe-KP-tre"/>
+                                </constraints>
+                                <connections>
+                                    <action selector="action:" destination="ObA-dk-sSI" eventType="touchUpInside" id="9RS-j4-urb"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="7" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SJs-16-X5q">
+                                <rect key="frame" x="3" y="325" width="100" height="100"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="100" id="2zj-4o-r4b"/>
+                                    <constraint firstAttribute="height" constant="100" id="JRy-qq-7RG"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="100" id="Q3q-bm-Lli"/>
+                                    <constraint firstAttribute="width" constant="100" id="c3F-im-3bU"/>
+                                </constraints>
+                                <connections>
+                                    <action selector="action:" destination="ObA-dk-sSI" eventType="touchUpInside" id="GuM-IN-1Pe"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="6" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Rkt-eq-AXZ">
+                                <rect key="frame" x="218" y="214" width="100" height="100"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="100" id="WXS-xn-jcW"/>
+                                    <constraint firstAttribute="height" constant="100" id="dyL-b6-U09"/>
+                                    <constraint firstAttribute="width" constant="100" id="hJA-wJ-7P3"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="100" id="wXq-wM-T8e"/>
+                                </constraints>
+                                <connections>
+                                    <action selector="action:" destination="ObA-dk-sSI" eventType="touchUpInside" id="KTE-BO-GWA"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="5" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="S9D-Yw-dQo">
+                                <rect key="frame" x="110" y="214" width="100" height="100"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="100" id="5u1-78-sJT"/>
+                                    <constraint firstAttribute="width" constant="100" id="GRV-gz-Nqk"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="100" id="fRi-6Y-PIQ"/>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="100" id="gJJ-RQ-nKT"/>
+                                </constraints>
+                                <connections>
+                                    <action selector="action:" destination="ObA-dk-sSI" eventType="touchUpInside" id="Uks-SS-rhx"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="4" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hyk-bI-3fF">
+                                <rect key="frame" x="3" y="214" width="100" height="100"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="100" id="2aW-i8-Arc"/>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="100" id="6vf-hC-JtT"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="100" id="Of0-me-rUX"/>
+                                    <constraint firstAttribute="height" constant="100" id="dLl-1n-MJc"/>
+                                </constraints>
+                                <connections>
+                                    <action selector="action:" destination="ObA-dk-sSI" eventType="touchUpInside" id="Ccc-jk-4Ma"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="3" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NIR-Ll-Yek">
+                                <rect key="frame" x="218" y="104" width="100" height="100"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="100" id="807-K2-7hE"/>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="100" id="POu-Wl-jTi"/>
+                                    <constraint firstAttribute="width" constant="100" id="sJk-rA-rLe"/>
+                                    <constraint firstAttribute="height" constant="100" id="vkD-BI-kBE"/>
+                                </constraints>
+                                <connections>
+                                    <action selector="action:" destination="ObA-dk-sSI" eventType="touchUpInside" id="jxE-yR-5Ds"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="2" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="W6Y-wu-2FL">
+                                <rect key="frame" x="110" y="109" width="100" height="100"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="100" id="PNX-Lm-8zi"/>
+                                    <constraint firstAttribute="width" constant="100" id="VHe-sZ-bsn"/>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="100" id="YA9-r3-hXj"/>
+                                    <constraint firstAttribute="height" constant="100" id="s4W-Sw-eCu"/>
+                                </constraints>
+                                <connections>
+                                    <action selector="action:" destination="ObA-dk-sSI" eventType="touchUpInside" id="RWT-1Y-Z90"/>
+                                </connections>
+                            </button>
+                            <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="b2Y-qW-n7E">
+                                <rect key="frame" x="3" y="20" width="71" height="30"/>
+                                <state key="normal" title="Play Again"/>
+                                <connections>
+                                    <action selector="PlayAgain:" destination="ObA-dk-sSI" eventType="touchUpInside" id="ilT-oC-LMD"/>
+                                </connections>
+                            </button>
+                            <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Cross has Won!" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="usc-7s-w9D">
+                                <rect key="frame" x="0.0" y="58" width="320" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="320" id="93Z-qG-mET"/>
+                                    <constraint firstAttribute="height" constant="21" id="p22-3l-rbx"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="b2Y-qW-n7E" firstAttribute="top" secondItem="qkL-Od-lgU" secondAttribute="bottom" id="4Bv-jW-U1u"/>
+                            <constraint firstItem="usc-7s-w9D" firstAttribute="top" secondItem="b2Y-qW-n7E" secondAttribute="bottom" constant="8" id="fJJ-Gq-Yaz"/>
+                            <constraint firstItem="uxI-f1-NHo" firstAttribute="top" secondItem="qkL-Od-lgU" secondAttribute="bottom" constant="79" id="kNo-r6-k0m"/>
+                            <constraint firstItem="b2Y-qW-n7E" firstAttribute="leading" secondItem="zMn-AG-sqS" secondAttribute="leading" constant="3" id="sGX-XR-KY5"/>
+                        </constraints>
+                    </view>
+                    <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+                    <size key="freeformSize" width="320" height="528"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="X47-rx-isc" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="33.600000000000001" y="37.781109445277366"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Board" width="1078" height="1068"/>
+    </resources>
+</document>
